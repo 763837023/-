@@ -1,29 +1,476 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-		
-	</head>
-	<body>
-		<header>
-			<div class="position">
-				<div class="logo">
-					<a href="img/logo.png"><img src="img/logo.png" alt="" /></a>
-				</div>
-				<div class="favorite">
-					设为首页  |  加入收藏
-				</div>
-				<div class="iframe">
-					<iframe id="fancybox-frame" name="fancybox-frame1533479465558" frameborder="0" scrolling="no" hspace="0"  src="http://i.tianqi.com/index.php?c=code&id=34&icon=1&num=3"></iframe>
-				</div>
-				<form id="search" method="post">
-					<input class ="search_button" type="submit" value=""/>
-					<input class ="search_input" type="text" name="key" placeholder="请输入您要搜索的信息..." />
-				</form>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+	<script type="text/javascript" src="js/jquery1.42.min.js" ></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.2.source.js" ></script>
+	<script type="text/javascript" src="js/jquery.SuperSlide.2.1.2.js" ></script>
+</head>
+<body>
+	<header>
+		<div class="position">
+			<div class="logo">
+				<a href="img/logo.png"><img src="img/logo.png" alt="" /></a>
 			</div>
-		</header>
-	</body>
+			<div class="favorite">
+				设为首页  |  加入收藏
+			</div>
+			<div class="iframe">
+				<iframe id="fancybox-frame" name="fancybox-frame1533479465558" frameborder="0" scrolling="no" hspace="0"  src="http://i.tianqi.com/index.php?c=code&id=34&icon=1&num=3"></iframe>
+			</div>
+			<form id="search" method="post">
+				<input class ="search_button" type="submit" value=""/>
+				<input class ="search_input" type="text" name="key" placeholder="请输入您要搜索的信息..." />
+			</form>
+		</div>
+		<div style="clear:both;"></div>
+	</header>
+	<div class="position">
+		<nav>
+			<ul id="nav">
+				<li class="nLi on">
+					<h3><a href="index.html" target="_blank">首页</a></h3>
+				</li>
+				<div class="divide"><img src="img/divide.png"></div>
+				<li class="nLi">
+					<h3><a href="#" target="_blank">学院概况</a></h3>
+					<ul class="sub" style="display: none;">
+						<li><a href="#">学院简介</a></li>
+						<li><a href="#">办学定位</a></li>
+						<li><a href="#">学院领导</a></li>
+						<li><a href="#">机构设置</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+				</li>
+				<div class="divide"><img src="img/divide.png"></div>
+				<li class="nLi">
+					<h3><a href="#" target="_blank">系部设置</a></h3>
+					<ul class="sub" style="display: none;">
+						<li><a href="#">土木工程系</a></li>
+						<li><a href="#">机电工程系</a></li>
+						<li><a href="#">工程管理系</a></li>
+						<li><a href="#">经信管理系</a></li>
+						<li><a href="#">电信工程系</a></li>
+						<li><a href="#">交通运输系</a></li>
+						<li><a href="#">外国语系</a></li>
+						<li><a href="#">艺术设计系</a></li>
+						<li><a href="#">体育部</a></li>
+						<li><a href="#">基础课部</a></li>
+					</ul>
+				</li>
+				<div class="divide"><img src="img/divide.png"></div>
+				<li class="nLi">
+					<h3><a href="#" target="_blank">校园文化</a></h3>					
+				</li>
+				<div class="divide"><img src="img/divide.png"></div>
+				<li class="nLi">
+					<h3><a href="#" target="_blank">招生就业</a></h3>
+					<ul class="sub" style="display: none;">
+						<li><a href="#">招生信息网</a></li>
+						<li><a href="#">就业信息网</a></li>
+					</ul>
+					
+				</li>
+				<div class="divide"><img src="img/divide.png"></div>
+				<li class="nLi">
+					<h3><a href="#" target="_blank">质量工程</a></h3>
+					<ul class="sub">
+						<li><a href="#">教学名师</a></li>
+						<li><a href="#">教学团队</a></li>
+						<li><a href="#">特色专业</a></li>
+						<li><a href="#">精品共享课</a></li>
+						<li><a href="#">精品在线课</a></li>
+						<li><a href="#">实验示范中心</a></li>
+						<li><a href="#">在线开放课程</a></li>
+					</ul>
+				</li> 
+			</ul>
+		</nav>
+
+		<div class="content">
+			<div class="slidebox" id="slidebox">
+				<div class="hd">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="bd">
+					<ul>
+						<li>
+							<a href="#"><img src="img/1.jpg"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/2.jpg"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/3.jpg"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/4.jpg"></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/5.jpg"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="row1">
+				<div class="left">
+					<div class="titlem">
+						<a class="en" href="#">School journalism</a><a class="cn" href="#">学院新闻</a>
+						<div id="slideBox1" class="slideBox1">
+							<div class="hd1">
+								<ul><li class="">1</li><li class="">2</li></ul>
+							</div>
+							<div class="bd1">
+								<ul>
+									<li style="display: none;"><a href="#" target="_blank" title="我院教师在兰州交通大学举办的演讲比赛中喜获佳绩"><img src="img/20181213113138289.jpg" alt="我院教师在兰州交通大学举办的演讲比赛中喜获佳绩"></a></li>
+
+									<li style="display: none;"><a href="#" target="_blank" title="我院学生在兰州交通大学举办的演讲比赛中喜获佳绩"><img src="img/20181128163112725.jpg" alt="我院学生在兰州交通大学举办的演讲比赛中喜获佳绩"></a></li> 
+								</ul>
+							</div>
+
+
+
+						</div>
+					</div>
+				</div>
+
+				<div class="middle">
+					<div class="titlem">
+
+						<a class="MORE" href="#" style="float:right;">更多&gt;&gt;</a>
+					</div>
+					<ul>
+						<li><a href="#" target="_blank" title="学院顺利召开第三期教职工培训大会">学院顺利召开第三期教职工培训大会</a><p>2018-12-03</p></li>
+
+						<li><a href="#" target="_blank" title="我院教师在兰州交通大学举办的演讲比赛中喜获佳绩">我院教师在兰州交通大学举办的演讲比赛中喜获佳绩</a><p>2018-11-30</p></li>
+
+						<li><a href="#" target="_blank" title="陈彪院长一行视察校园连新路施工情况">陈彪院长一行视察校园连新路施工情况</a><p>2018-11-28</p></li>
+
+						<li><a href="#" target="_blank" title="我院教师代表参观兰州交通大学展馆">我院教师代表参观兰州交通大学展馆</a><p>2018-11-26</p></li>
+
+						<li><a href="#" target="_blank" title="我院学生在兰州交通大学举办的演讲比赛中喜获佳绩">我院学生在兰州交通大学举办的演讲比赛中喜获佳绩</a><p>2018-11-26</p></li>
+
+						<li><a href="#" target="_blank" title="经济管理系隆重举行校企合作协同育人共建基地签约暨揭牌仪式">经济管理系隆重举行校企合作协同育人共建基地签约暨揭..</a><p>2018-11-22</p></li>
+
+						<li><a href="#" target="_blank" title="陈彪院长带队赴兰州工业学院交流学习">陈彪院长带队赴兰州工业学院交流学习</a><p>2018-11-21</p></li>
+
+						<li><a href="#" target="_blank" title="我院成功举行第十二届青年教师讲课比赛">我院成功举行第十二届青年教师讲课比赛</a><p>2018-11-21</p></li>
+					</ul>
+				</div>
+				<div class="right">
+
+					<div class="titlem">
+						<a class="en" href="#">Announcements</a><a class="cn" href="#">通知公告</a>
+						<a class="MORE" href="#">更多&gt;&gt;</a>
+					</div>
+					<div class="txtMarquee-top">
+						<div class="hd">
+							<a class="next"></a>
+							<a class="prev"></a>
+						</div>
+						<div class="bd">
+							<div class="tempWrap" style="overflow:hidden; position:relative; height:222px"><ul class="infoList" style="height: 481px; position: relative; padding: 0px; margin: 0px; top: -79px;"><li class="box clone" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="关于报送2018年高等学校工程技术人员 高级职务评审材料的通知">
+									关于报送2018年高等学校工程技术..
+								</a>
+								<p style="display:block; float:right;">10-17</p>
+							</li>
+
+							<li class="box" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="关于我院补收大学生城镇居民基本医疗 保险费和书本费相关问题的回复">
+									关于我院补收大学生城镇居民基本..
+								</a>
+								<p style="display:block; float:right;">11-20</p>
+							</li>
+
+							<li class="box" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="关于学院2018年下半年初、中级职称 评审（定）的通知">
+									关于学院2018年下半年初、中级职..
+								</a>
+								<p style="display:block; float:right;">11-15</p>
+							</li>
+
+							<li class="box" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="关于报送2018年高等学校工程技术人员中级职务评审材料的通知">
+									关于报送2018年高等学校工程技术..
+								</a>
+								<p style="display:block; float:right;">11-08</p>
+							</li>
+
+							<li class="box" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="兰州交通大学博文学院关于推荐全省教育考试招生工作先进集体和先进工作者的公示">
+									兰州交通大学博文学院关于推荐全..
+								</a>
+								<p style="display:block; float:right;">11-08</p>
+							</li>
+
+							<li class="box" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="关于2018年下半年高等学校教师资格认定工作的通知">
+									关于2018年下半年高等学校教师资..
+								</a>
+								<p style="display:block; float:right;">10-24</p>
+							</li>
+
+							<li class="box" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="关于报送2018年高等学校工程技术人员 高级职务评审材料的通知">
+									关于报送2018年高等学校工程技术..
+								</a>
+								<p style="display:block; float:right;">10-17</p>
+							</li>
+
+							<li class="box clone" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="关于我院补收大学生城镇居民基本医疗 保险费和书本费相关问题的回复">
+									关于我院补收大学生城镇居民基本..
+								</a>
+								<p style="display:block; float:right;">11-20</p>
+							</li><li class="box clone" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="关于学院2018年下半年初、中级职称 评审（定）的通知">
+									关于学院2018年下半年初、中级职..
+								</a>
+								<p style="display:block; float:right;">11-15</p>
+							</li><li class="box clone" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="关于报送2018年高等学校工程技术人员中级职务评审材料的通知">
+									关于报送2018年高等学校工程技术..
+								</a>
+								<p style="display:block; float:right;">11-08</p>
+							</li><li class="box clone" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="兰州交通大学博文学院关于推荐全省教育考试招生工作先进集体和先进工作者的公示">
+									兰州交通大学博文学院关于推荐全..
+								</a>
+								<p style="display:block; float:right;">11-08</p>
+							</li><li class="box clone" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="关于2018年下半年高等学校教师资格认定工作的通知">
+									关于2018年下半年高等学校教师资..
+								</a>
+								<p style="display:block; float:right;">10-24</p>
+							</li><li class="box clone" style="display: block; width: 100%; float: left; height: 37px;">
+
+								<a class="text" href="#" target="_blank" style="display:block; float:left;" title="关于报送2018年高等学校工程技术人员 高级职务评审材料的通知">
+									关于报送2018年高等学校工程技术..
+								</a>
+								<p style="display:block; float:right;">10-17</p>
+							</li></ul></div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="row2">
+
+				<div class="left">
+
+					<div class="titlem">
+						<a class="en" href="../www/HdClscontentmain.asp?ClassId=186">Recruitment</a><a class="cn" href="../www/HdClscontentmain.asp?ClassId=186">招生信息</a>
+						<a class="MORE" href="../www/HdClscontentmain.asp?ClassId=186">更多&gt;&gt;</a>
+					</div>
+
+					<div class="box" style="margin-top:0;">
+						<a href="/W/HdContentDisp-186-1641-2017731-132461.htm" target="_blank" title="2018我院新生录取查询入口">2018我院新生录取查询入口</a>
+						<p>仅可查询录取结束的省份 (已录取结束省份：）</p>
+					</div>
+
+					<div class="box">
+						<a href="/W/HdContentDisp-186-1587-2017613-815069.htm" target="_blank" title="欢迎报考兰州交通大学博文学院">欢迎报考兰州交通大学博文..</a>
+						<p>兰州交通大学博文学院2002年由兰州交通大学申办，经甘肃省..</p>
+					</div>
+
+					<div class="box">
+						<a href="/W/HdContentDisp-186-2124-2018718-840626.htm" target="_blank" title="兰州交通大学博文学院2018年招生章程">兰州交通大学博文学院2018..</a>
+						<p>第一条  根据《中华人民共和国育法》、《中华人民共和国高..</p>
+					</div>
+				</div>
+				<div class="middle">
+
+					<div class="titlem">
+						<a class="en" href="../www/HdClscontentmain.asp?ClassId=10">School dynamic</a><a class="cn" href="../www/HdClscontentmain.asp?ClassId=10">学院动态</a>
+						<a class="MORE" href="../www/HdClscontentmain.asp?ClassId=10">更多&gt;&gt;</a>
+					</div>
+
+					<div class="box">
+						<a href="/W/HdContentDisp-10-2297-20181213-634879.htm" target="_blank" title="经信管理系召开2019届毕业生就业动员大会">经信管理系召开2019届毕业..</a>
+						<p>为加强对2019届毕业生的就业指导，拓宽我系毕业生的就业思路，配..</p>
+					</div>
+
+					<div class="box" style="float:right;">
+						<a href="/W/HdContentDisp-10-2298-20181213-137789.htm" target="_blank" title="经信管理系“浦发杯”ERP沙盘模拟大赛成功举办">经信管理系“浦发杯”ERP沙..</a>
+						<p>2018年11月26日，由兰州交通大学博文学院经信管理系主办，经济与..</p>
+					</div>
+
+					<div class="box">
+						<a href="/W/HdContentDisp-10-2256-20181126-647706.htm" target="_blank" title="兰州交通大学博文学院电信工程系成功举办首届智能小车大赛">兰州交通大学博文学院电信..</a>
+						<p>为了响应近年来大学生创业大赛“创青春”创新与青春的号召，进一..</p>
+					</div>
+
+					<div class="box" style="float:right;">
+						<a href="/W/HdContentDisp-10-2211-20181112-818708.htm" target="_blank" title="经信管理系与新道科技股份有限公司 签订校企合作与协同育人战略合作协议">经信管理系与新道科技股份..</a>
+						<p>为进一步贯彻落实《国务院办公厅关于深化产教融合的若干意见》（..</p>
+					</div>
+
+					<div class="box">
+						<a href="/W/HdContentDisp-10-2210-20181112-570005.htm" target="_blank" title="经信管理系与北京正保远程教育集团 签订助学计划合作协议">经信管理系与北京正保远程..</a>
+						<p>为进一步贯彻落实《国务院办公厅关于深化产教融合的若干意见》（..</p>
+					</div>
+
+					<div class="box" style="float:right;">
+						<a href="/W/HdContentDisp-10-2194-2018112-998884.htm" target="_blank" title="电信工程系顺利开展2019届 毕业生就业指导专题讲座">电信工程系顺利开展2019届..</a>
+						<p>为应对当前的就业形势,做好毕业生就业工作,加强毕业生就业的指导..</p>
+					</div>
+				</div>
+				<div class="right">
+					<div class="titlem">
+						<a class="en">Office automation</a><a class="cn">办公自动化</a>
+					</div>
+					<div class="main">
+						<div class="main_in">
+							<a class="boxm box1" href="http://61.178.64.28:8080/index.aspx">
+
+							</a>
+							<a class="boxm box2" href="http://61.178.64.31/Jwweb/default.aspx" target="_blank">
+
+							</a>
+							<a class="boxm box3" href="http://192.168.230.100/" target="_blank">
+
+							</a>
+							<a class="boxm box4" href="http://61.178.64.31/XSWEB/" target="_blank">
+
+							</a>
+							<a class="boxm box5" href="http://61.178.64.31/RLWEB/" target="_blank">
+
+							</a>
+							<a class="boxm box6" href="http://jiaowu.bowenedu.cn/www/HdClsContentMain.asp?ClassId=24" target="_blank">
+
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div style="clear:both;"></div>
+			<div class="row3">
+<div class="titlem">
+            	<a class="en" href="#">Campus culture</a><a class="cn" href="#">校园文化</a>
+                <a class="MORE" href="#" style="padding-right:100px;">更多&gt;&gt;</a>
+		</div>
+		<div class="picScroll-left">
+			<div class="hd">
+				<a class="next"></a>
+				<ul><li class="on">1</li><li class="">2</li></ul>
+				<a class="prev"></a>
+			</div>
+            <div style="width:1200px; overflow:hidden;">
+			<div class="bd">
+				<div class="tempWrap" style="overflow:hidden; position:relative; width:1225px"><ul class="picList" style="width: 2940px; position: relative; overflow: hidden; padding: 0px; margin: 0px; left: -385px;"><li class="clone" style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="校园一角"><img src="img/20170505173648918.jpg" alt="校园一角"></a></div>
+						<div class="title"><a href="#" target="_blank" title="校园一角">校园一角</a></div>
+					</li>
+                  
+					<li style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="演讲比赛获佳绩"><img src="img/20181128165652886.jpg" alt="演讲比赛获佳绩"></a></div>
+						<div class="title"><a href="#" target="_blank" title="演讲比赛获佳绩">演讲比赛获佳绩</a></div>
+					</li>
+					              
+					<li style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="秋雪"><img src="img/20181107165125946.jpg" alt="秋雪"></a></div>
+						<div class="title"><a href="#" target="_blank" title="秋雪">秋雪</a></div>
+					</li>
+					              
+					<li style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="博文学院宣传片"><img src="img/20170613145613509.jpg" alt="博文学院宣传片"></a></div>
+						<div class="title"><a href="#" target="_blank" title="博文学院宣传片">博文学院宣传片</a></div>
+					</li>
+					              
+					<li style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="校园春色"><img src="img/20170505172743151.jpg" alt="校园春色"></a></div>
+						<div class="title"><a href="#" target="_blank" title="校园春色">校园春色</a></div>
+					</li>
+					              
+					<li style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="省教育厅领导莅临指导"><img src="img/20160509165902123.bmp" alt="省教育厅领导莅临指导"></a></div>
+						<div class="title"><a href="#" target="_blank" title="省教育厅领导莅临指导">省教育厅领导莅临指导</a></div>
+					</li>
+					              
+					<li style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="校园一角"><img src="img/20170505173648918.jpg" alt="校园一角"></a></div>
+						<div class="title"><a href="#" target="_blank" title="校园一角">校园一角</a></div>
+					</li>
+					              
+				<li class="clone" style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="演讲比赛获佳绩"><img src="img/20181128165652886.jpg" alt="演讲比赛获佳绩"></a></div>
+						<div class="title"><a href="#" target="_blank" title="演讲比赛获佳绩">演讲比赛获佳绩</a></div>
+					</li><li class="clone" style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="秋雪"><img src="img/20181107165125946.jpg" alt="秋雪"></a></div>
+						<div class="title"><a href="#" target="_blank" title="秋雪">秋雪</a></div>
+					</li><li class="clone" style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="博文学院宣传片"><img src="img/20170613145613509.jpg" alt="博文学院宣传片"></a></div>
+						<div class="title"><a href="#" target="_blank" title="博文学院宣传片">博文学院宣传片</a></div>
+					</li><li class="clone" style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="校园春色"><img src="img/20170505172743151.jpg" alt="校园春色"></a></div>
+						<div class="title"><a href="#" target="_blank" title="校园春色">校园春色</a></div>
+					</li><li class="clone" style="float: left; width: 220px;">
+						<div class="pic"><a href="#" target="_blank" title="省教育厅领导莅临指导"><img src="img/20160509165902123.bmp" alt="省教育厅领导莅临指导"></a></div>
+						<div class="title"><a href="#" target="_blank" title="省教育厅领导莅临指导">省教育厅领导莅临指导</a></div>
+					</li></ul></div>
+			</div>
+            </div>
+		</div>
+
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+	</div>
+	<footer>
+		<div class="posit">
+			<p>咨询电话：0000-0000000    管理员信箱：13993481533@163.com    地址：你猜啊    版权所有：慕若曦 <a href="http://www.miibeian.gov.cn" target="_blank">陇ICP备10000000号</a></p>
+		</div>
+		<script type="text/javascript">   
+			jQuery("#nav").slide({ 
+                type:"menu",// 效果类型，针对菜单/导航而引入的参数（默认slide）
+                titCell:".nLi", //鼠标触发对象
+                targetCell:".sub", //titCell里面包含的要显示/消失的对象
+                effect:"slideDown", //targetCell下拉效果
+                delayTime:300 , //效果时间
+                triggerTime:0, //鼠标延迟触发时间（默认150）
+                returnDefault:true //鼠标移走后返回默认状态，例如默认频道是“预告片”，鼠标移走后会返回“预告片”（默认false）
+            });
+        </script>
+        <script type="text/javascript">
+        	jQuery(".slideBox1").slide({mainCell:".bd1 ul",titCell:".hd1 li",autoPlay:true});
+        </script>
+        <script type="text/javascript">
+        	jQuery(".txtMarquee-top").slide({mainCell:".bd ul",autoPlay:true,effect:"topMarquee",vis:6,interTime:30});
+        </script>
+        <script type="text/javascript">
+		jQuery(".picScroll-left").slide({titCell:".hd ul",mainCell:".bd ul",autoPage:true,effect:"leftMarquee",autoPlay:true,vis:5,autoPlay:true,interTime:50,trigger:"click"});
+		</script>
+        <script type="text/javascript">
+        	jQuery("#slidebox").slide({ 
+        		mainCell:".bd ul",
+        		effect : "fade",
+        		autoPlay:true
+        	});
+        </script>
+    </footer>
+</body>
 </html>
